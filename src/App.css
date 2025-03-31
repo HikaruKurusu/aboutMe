@@ -1,38 +1,127 @@
-.App {
+body, html {
+  background-color: #c6bcb6;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+/* Full-screen container to center content */
+.nav-container {
+  width: 5%;
+}
+/* Style the buttons with percentage-based sizing */
+.nav-link {
+  position: relative;
+  background-color: transparent;
   text-align: center;
+  text-decoration: none;
+  border: 0px transparent;
+  color: white;
+  background-color: #c6bcb6;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link:hover {
+  color: gray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  /* position: fixed; */
+  display: flex; /* Flexbox to align items in a row */
+  justify-content: space-between; /* Space out the items */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure container takes up full width */
+  background-color: #c6bcb6;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container2{
+  margin: 1%; /* Add some space between boxes */
+  margin-left: 4%;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%; /* Adjusted to make space for AboutMe */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 0.2rem;
+  padding: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Profile image styling */
+.profile-img {
+  width: 60%; /* Adjust size as needed */
+  height: 60%;
+  object-fit: cover; /* Prevents distortion */
+  border-radius: 50%; /* Makes it round */
+  border: 2px solid white;
+}
+
+/* Profile text */
+.profile-text {
+  color: white;
+  font-size: 1rem;
+  margin: 0; /* Remove unnecessary margin */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.whiteBox {
+  width: 100%;   /* Full width */
+  height: 70vh;  /* 30% of the viewport height */
+  background-color: gray;  /* White background */
+  position: relative;  /* Keeps it in the normal flow */
+}
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50%;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2);
+}
+.about {
+  margin: 0; /* Remove unnecessary margin */
+  padding: 0.5rem; /* Add some padding */
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  width: 30%;
+  margin-left: 4%;
+  background-color: #c6bcb6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  margin: 0; /* Remove unnecessary margin */
+  padding: 0.5rem; /* Add some padding */
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.AboutMe {
+  position: absolute;
+  top: 100%; /* Places it directly below the profile section */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  width: 80%; /* Ensures proper alignment */
+}
+.Skills {
+  position: absolute;
+  top: 150%; /* Places it directly below the profile section */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  width: 80%; /* Ensures proper alignment */
 }
