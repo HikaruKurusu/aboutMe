@@ -52,7 +52,7 @@ function App() {
         </div>
         <div className="Resume" style={{ textAlign: "center", marginTop: "20px" }}>
           <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>Download My Resume</h2>
-          <a href="https://drive.google.com/file/d/1yHBIGiSinrb4nw1RSUV2jhfv5h4VAK1a/view?usp=sharing">
+          <a href="/HikaruKurusuSoftwareV4.pdf" download>
             <button
               style={{
                 backgroundColor: "#007bff",
